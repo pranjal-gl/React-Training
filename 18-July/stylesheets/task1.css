@@ -1,0 +1,22 @@
+.div {
+    /* background-color: teal; */
+    border-style: solid;
+    border-radius: 5px;
+    border-color: thistle;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.div-2 {
+    height: 300px;
+}
+
+/* usig box-property
+img {
+    margin: 0px 76px;
+} */
+
+.div-3 {
+    display: flex;
+    justify-content: space-evenly;
+}

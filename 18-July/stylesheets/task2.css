@@ -1,0 +1,80 @@
+.parent{
+    display: grid;
+    grid-template-columns:25% 25% 25% 25%;
+    grid-template-rows:80px 250px 250px 250px;
+    border-style: solid;
+    border-color: blue;
+}
+
+.c11{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.c12{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+}
+
+.c21{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: grid;
+    grid-template-columns:30% 30% 40%;
+    grid-template-rows:250px;
+}
+
+.c211 {
+    border-style: solid;
+    border-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 25px;
+}
+.c212 {
+    border-style: solid;
+    border-color: blue;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 25px;
+}
+.c213 {
+    background-color: brown;
+    color: burlywood;
+    border-style: solid;
+    border-color: blue;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin: 25px;
+}
+.c213-p {
+    padding: 40px;
+}
+
+.c22{
+    
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:250px;
+}
+
+.c221 {
+    border-style: solid;
+    border-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 25px;
+}
+
+.c222 {
+    background-color: brown;
+    color: burlywood;
+    border-style: solid;
+    border-color: blue;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 25px;
+    padding: 30px;
+}

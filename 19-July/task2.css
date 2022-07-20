@@ -1,0 +1,46 @@
+.navbar {
+    background-color: black;
+}
+.navbar a {
+    color: blanchedalmond;
+}
+.navbar a:hover {
+    color: rgb(255, 214, 152);
+}
+
+.navbar a:active {
+    color: rgb(255, 214, 152);
+}
+
+.carousel-item img {
+    padding: 0;
+}
+img {
+    margin: 0;
+    height: 350px;
+    padding: 55px;
+}
+.category {
+    height: 100px;
+    background-color: burlywood;
+    color: blanchedalmond;
+}
+.category h2 {
+    text-align: center;
+    padding: 30px;
+}
+.card {
+    text-align: center;
+}
+.card-body .btn {
+    color: white;
+}
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    height: 300px;
+    background-color: black;
+}
