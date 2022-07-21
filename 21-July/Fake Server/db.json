@@ -1,0 +1,40 @@
+{
+    "empDetails":[
+        {
+            "id":0,
+            "fname":"Peter",
+            "email":"peter@gmail.com",
+            "city": "Delhi"
+        },
+        {
+            "id":1,
+            "fname":"Henry",
+            "email":"henry@gmail.com",
+            "city": "Mumbai"
+        },
+        {
+            "id":2,
+            "fname":"Carry",
+            "email":"carry@gmail.com",
+            "city": "Lucknow"
+        },
+        {
+            "id": 3,
+            "fname": "Lenord",
+            "email":"lenord@gmail.com",
+            "city": "Delhi"
+        }, 
+        {
+            "id": 4,
+            "fname": "Sheldon",
+            "email": "sheldon@gmail.com",
+            "city": "Lucknow"
+        },
+        {
+            "id": 5,
+            "fname": "Harward",
+            "email": "harward@gmail.com",
+            "city": "Delhi"
+        }
+    ]
+}
