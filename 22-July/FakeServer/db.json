@@ -1,0 +1,52 @@
+{
+  "empDetails": [
+    {
+      "id": 0,
+      "fname": "Bernadette",
+      "email": "bernadette@gmail.com",
+      "phone": 123344
+    },
+    {
+      "id": 1,
+      "fname": "Amy",
+      "email": "amy@gmail.com",
+      "phone": 125789876
+    },
+    {
+      "id": 2,
+      "fname": "Raj",
+      "email": "raj@gmail.com",
+      "phone": 23456
+    },
+    {
+      "id": 3,
+      "fname": "Leonord",
+      "email": "leonord@gmail.com",
+      "phone": 12345678
+    },
+    {
+      "id": 4,
+      "fname": "Sheldon",
+      "email": "sheldon@gmail.com",
+      "phone": 12345678
+    },
+    {
+      "id": 6,
+      "fname": "Penny",
+      "email": "pennynew@gmail.com",
+      "phone": 97544
+    },
+    {
+      "id": 5,
+      "fname": "Howard",
+      "email": "howard@gmail.com",
+      "phone": 98765
+    },
+    {
+      "id": 1658486746021,
+      "fname": "Priya",
+      "email": "priya@gmail.com",
+      "phone": "7654"
+    }
+  ]
+}
