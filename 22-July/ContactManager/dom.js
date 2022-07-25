@@ -50,7 +50,8 @@ function generateUI(data) {
                     <h3>${element.fname}</h3>
                     <p>${element.email}</p>
                     <p>${element.phone}</p>
-                    <button>delete</button>
+
+                    <button onclick="deleteData(${element.id})">Delete</button>
                 </div>
             </div>
         </div>
@@ -61,3 +62,14 @@ function generateUI(data) {
 }  
 
 getContacts();
+
+function deleteData(id) {
+    const url = `http://localhost:3001/empDetails/${id}`;
+    fetch(url, {
+        method: 'DELETE'
+    }).then((res)=>{
+        return res.json();
+    }).then((res)=>{
+        console.log(res);
+    })
+}

@@ -1,12 +1,6 @@
 {
   "empDetails": [
     {
-      "id": 0,
-      "fname": "Bernadette",
-      "email": "bernadette@gmail.com",
-      "phone": 123344
-    },
-    {
       "id": 1,
       "fname": "Amy",
       "email": "amy@gmail.com",
@@ -35,18 +29,6 @@
       "fname": "Penny",
       "email": "pennynew@gmail.com",
       "phone": 97544
-    },
-    {
-      "id": 5,
-      "fname": "Howard",
-      "email": "howard@gmail.com",
-      "phone": 98765
-    },
-    {
-      "id": 1658486746021,
-      "fname": "Priya",
-      "email": "priya@gmail.com",
-      "phone": "7654"
     }
   ]
 }
