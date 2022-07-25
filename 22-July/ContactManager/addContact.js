@@ -5,7 +5,6 @@ let uphone = document.getElementById('phone');
 
 form.addEventListener('submit', (event)=>{
     event.preventDefault();
-    // console.log(fname.value);
 
     let data = {
         id: Date.now(),
