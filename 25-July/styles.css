@@ -1,0 +1,27 @@
+body {
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+body h1 {
+    margin: 25px;
+}
+.user-form {
+    text-align: center;
+    padding: 40px;
+}
+
+.user-form input {
+    margin: 10px;
+}
+
+.card {
+    margin: 10px;
+    background-color: burlywood;
+}
+
+button {
+    background-color: darkred;;
+    color: aliceblue;
+    margin: 15px;
+}

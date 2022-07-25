@@ -9,34 +9,39 @@ function getVal(id) {
     updateID = id;
 }
 
-// ADDING NEW CONTACT
+// CLICK LISTENER
 form.addEventListener('submit', (event)=>{
     event.preventDefault();
     if (event.submitter.id == 'add') {
-        let data = {
-            id: Date.now(),
-            fname: uname.value,
-            email: uemail.value,
-            phone: uphone.value
-        }
-        const url = 'http://localhost:3001/empDetails';
-        fetch(url, {
-            method: 'POST',
-            body: JSON.stringify(data),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        }).then((res)=>{
-            return res.json()
-        }).then((res)=>{
-            location.reload();
-            console.log(res);
-        });
+        addNew();
     } else {
         updateData(updateID);
     }
     
 })
+
+// CREATE NEW CONTACT
+function addNew() {
+    let data = {
+        id: Date.now(),
+        fname: uname.value,
+        email: uemail.value,
+        phone: uphone.value
+    }
+    const url = 'http://localhost:3001/empDetails';
+    fetch(url, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then((res)=>{
+        return res.json()
+    }).then((res)=>{
+        location.reload();
+        console.log(res);
+    });
+}
 
 // RENDERING ALL CONTACT
 function getContacts() {
@@ -69,7 +74,6 @@ function generateUI(data) {
     });
     contactContainer.innerHTML = content;
 }  
-
 getContacts();
 
 // DELETE CONTACT
@@ -85,22 +89,20 @@ function deleteData(id) {
     })
 }
 
-// EDIT CONTACT
+// EDIT CONTACT BUTTON --> FILLING THE FORM
 function editData(id) {
     getVal(id);
     const url = `http://localhost:3001/empDetails/${id}`;
     fetch(url).then((res)=>{
         return res.json();
     }).then((res)=>{
-        // console.log(res);
         document.getElementById("fname").value = res.fname;
         document.getElementById("email").value = res.email;
         document.getElementById("phone").value = res.phone;
-
-        
     })
 }
 
+// UPDATION OF CONTACT
 function updateData(id) {
     const url = `http://localhost:3001/empDetails/${id}`;
     let data = {
