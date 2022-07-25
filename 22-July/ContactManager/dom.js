@@ -71,5 +71,6 @@ function deleteData(id) {
         return res.json();
     }).then((res)=>{
         console.log(res);
+        location.reload();
     })
 }
