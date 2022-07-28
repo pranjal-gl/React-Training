@@ -1,0 +1,21 @@
+div {
+    text-align: center;
+    margin: 90px;
+}
+form {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+input {
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: bisque;
+}
