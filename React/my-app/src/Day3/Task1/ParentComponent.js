@@ -7,19 +7,22 @@ class ParentComponent extends React.Component {
         super(props)
 
         this.state = {
-            isLoggedIn: false,
+            isLoggedIn: true,
         }
+    }
+
+    toggleUser = ()=> {
+        console.log("toggle");
+        this.setState({isLoggedIn:!(this.state.isLoggedIn)})
     }
 
     render() {
         return(
             <div>
                 {
-                    this.state.isLoggedIn ? <>
-                    <Dashboard></Dashboard>
-                    </>:<>
-                    <SignIn></SignIn>
-                    </>
+                    this.state.isLoggedIn ?
+                    <Dashboard toggleFun={this.toggleUser}>4</Dashboard> :
+                    <SignIn toggleFun = {this.toggleUser}></SignIn>
                 }
             </div>
         )
