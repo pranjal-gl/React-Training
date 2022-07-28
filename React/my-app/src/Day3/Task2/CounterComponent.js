@@ -20,11 +20,15 @@ class CounterComponent extends React.Component {
 
     render() {
         return(
-            <div>
-                <button onClick={this.decrement}>-</button>
+            <>
+            <h1>Counter</h1>
+            <div className="countDiv">
+                <button onClick={this.decrement} className="btnCount">-</button>
                 <h2>{this.state.counter}</h2>
-                <button onClick={this.increment}>+</button>
+                <button onClick={this.increment} className="btnCount">+</button>
             </div>
+            </>
+            
         )
     }
 }

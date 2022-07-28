@@ -14,6 +14,7 @@ class Dashboard extends React.Component {
     render() {
         return(
             <div>
+                <h1>Dashboard</h1>
                 <img src={this.state.imgURL} className='profImg'/>
                 <h2>{this.state.fname}</h2>
                 <p>Username: {this.state.username}</p>

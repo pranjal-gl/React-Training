@@ -1,7 +1,8 @@
-div {
+.countDiv {
     display: flex;
+    margin-left: 485px;
 }
 
-button {
+.btnCount {
     margin: 10px;
 }
