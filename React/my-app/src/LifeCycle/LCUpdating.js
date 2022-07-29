@@ -2,8 +2,10 @@ import React from "react";
 
 class LCUpdating extends React.Component {
     constructor(props) { //-- 1
+        // super()
+        // console.log(this.props);
         super(props)
-
+        
         this.state = {
             name: "Jack Sparrow"
         }
@@ -19,12 +21,13 @@ class LCUpdating extends React.Component {
     }
 
     changeName=()=>{
-        this.setState({name:"Jack"})
+        this.setState({name: this.props.name})
     }
     
 
     render() { //-- 4
         console.log("render");
+        // console.log(this.props);
         return(
             <div>
                 <h1>{this.state.name}</h1>
@@ -33,7 +36,12 @@ class LCUpdating extends React.Component {
         )
     }
 
-    componentDidUpdate() { //-- 5
+    getSnapshotBeforeUpdate(prevProp, prevState) { //-- 5
+        console.log(prevState);
+        return null;
+    }
+
+    componentDidUpdate() { //-- 6
         console.log("updated");
     }
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import LCMounting from './LifeCycle/LCMounting';
-import LCUpdating from './LifeCycle/LCUpdating'
+// import LCUpdating from './LifeCycle/LCUpdating'
+import Parent from './ContactManager/Parent'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <>
@@ -9,7 +10,8 @@ root.render(
         {/* <CounterComponent></CounterComponent> */}
         {/* <LCMounting></LCMounting> */}
 
-        <LCUpdating></LCUpdating>
+        {/* <LCUpdating name="Raju"></LCUpdating> */}
+        <Parent></Parent>
     </>
 
 );
