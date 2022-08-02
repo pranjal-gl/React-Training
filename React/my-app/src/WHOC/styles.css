@@ -1,0 +1,19 @@
+body {
+    background-color: lemonchiffon;
+}
+.search-form {
+    text-align: center;
+    margin: 50px;
+}
+
+.res-div {
+    text-align: center;
+    
+}
+
+.divider {
+    margin: auto;
+    border: solid;
+    height: 200px;
+    width: 500px;
+}
