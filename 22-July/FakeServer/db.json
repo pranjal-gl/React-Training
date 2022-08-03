@@ -1,16 +1,10 @@
 {
   "empDetails": [
     {
-      "fname": "Amy",
+      "fname": "Ammy",
       "email": "amy@gmail.com",
       "phone": "1257898768",
       "id": 1
-    },
-    {
-      "fname": "Raj",
-      "email": "raj@gmail.com",
-      "phone": "2345684843",
-      "id": 2
     },
     {
       "fname": "Sheldon",
@@ -49,12 +43,6 @@
       "phone": "9876543021"
     },
     {
-      "id": 1659507106484,
-      "fname": "Karan",
-      "phone": "9876545678",
-      "email": "karan@gmail.com"
-    },
-    {
       "id": 1659507201376,
       "fname": "Brijesh",
       "phone": "8765445678",
@@ -71,6 +59,12 @@
       "fname": "Mary",
       "phone": "876543234567",
       "email": "merry@gmail.com"
+    },
+    {
+      "id": 1659516671706,
+      "fname": "Raj",
+      "phone": "856783903",
+      "email": "raj@gmail.com"
     }
   ]
 }

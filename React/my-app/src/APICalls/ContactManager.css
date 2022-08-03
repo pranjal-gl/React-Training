@@ -12,3 +12,56 @@ body {
     margin-top: 10px;
     margin-left: 20px;
 }
+.nav img{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.input-form {
+    margin-top: 50px;
+    text-align: center;
+    margin-right: 150px;
+}
+
+.input-form input {
+    padding: 5px;
+    margin: 10px;
+}
+
+.input-btn {
+    width: 125px;
+    background-color: #2d2d5c;
+    color: white;
+    margin: 15px;
+}
+.input-form button {
+    position: absolute;
+    margin: 10px;
+    width: 135px;
+}
+.input-form h2 {
+    margin-left: 120px;
+}
+
+.input-btn:hover {
+    color: antiquewhite;
+}
+
+.container {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #2d2d5c;
+    border: solid #2d2d5c;
+}
+
+.h1-div {
+    margin: 50px 0px;
+    /* text-align: center; */
+    /* background-color: #2d2d5c; */
+    color: white;
+}
+
+.card-body {
+    margin: 10px;
+    display: inline-block;
+}

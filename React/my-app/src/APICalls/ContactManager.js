@@ -1,6 +1,7 @@
 import axios from "axios";
 import React from "react";
 import './ContactManager.css'
+import logo from './logo.png'
 class ContactManager extends React.Component {
     constructor(props) {
         super(props)
@@ -97,29 +98,31 @@ class ContactManager extends React.Component {
         return(
             <div>
                 <nav className="nav">
-                    <a className="navbar-brand" href="#">
-                        <img src="https://e7.pngegg.com/pngimages/852/102/png-clipart-dialer-contact-list-contact-manager-android-android-blue-simple-thumbnail.png" alt="" width="30" height="24"/>
-                    </a>
+                    <img src={logo} alt="" width="40" height="40"/>
+                    
                     <a className="nav-link active" href="#">Home</a>
                     <a className="nav-link" href="#">Search</a>
                     <a className="nav-link" href="#">About</a>
                 </nav>
-                {
-                    this.state.updateFlag ? <h2>Update existing contact</h2> : <h2>Add new contact</h2>
-                }
+                
 
-                <form>
+                <form className="input-form">
+                    {
+                        this.state.updateFlag ? <h2>Update existing contact</h2> : <h2>Add new contact</h2>
+                    }
                     <input text='text' placeholder="Username" onChange={(e)=>this.handleChange(e, 'name')} value={this.state.ipUser}></input>
                     <input text='text' placeholder="Phone" onChange={(e)=>this.handleChange(e, 'phone')} value={this.state.ipPhone}></input>
                     <input text='text' placeholder="Email" onChange={(e)=>this.handleChange(e, 'email')} value={this.state.ipEmail}></input>
                     {
-                        this.state.updateFlag ? <button onClick={(e)=>this.handleUpdate(e)}>Update contact</button> : <button onClick={(e)=>this.handleAdd(e)}>Add contact</button>
+                        this.state.updateFlag ? <button className="btn input-btn" onClick={(e)=>this.handleUpdate(e)}>Update contact</button> : <button className="btn input-btn" onClick={(e)=>this.handleAdd(e)}>Add contact</button>
                     }
                 </form>
                 
                 <div className="container">
-                <h1 className="container-h1">All contacts</h1>
-                <p>{this.state.statusText}</p>
+                    <div className="h1-div">
+                        <h1 className="container-h1">All contacts</h1>
+                        <p>{this.state.statusText}</p>
+                    </div>
                     <div className="row">
                         {
                             this.state.contactList.map((item)=>(
@@ -127,8 +130,10 @@ class ContactManager extends React.Component {
                                     <h3>{item.fname}</h3>
                                     <h5>{item.phone}</h5>
                                     <h5>{item.email}</h5>
-                                    <button onClick={(e)=>this.handleDelete(e, item.id)}>Delete</button>
-                                    <button onClick={(e)=>this.enableUpdateBtn(e, item)}>Update</button>
+                                    <a className="btn input-btn" onClick={(e)=>this.handleDelete(e, item.id)}>Delete</a>
+                                    <a className="btn input-btn" onClick={(e)=>this.enableUpdateBtn(e, item)}>Update</a>
+                                    {/* <button className="btn input-btn" onClick={(e)=>this.handleDelete(e, item.id)}>Delete</button> */}
+                                    {/* <button onClick={(e)=>this.enableUpdateBtn(e, item)}>Update</button> */}
                                 </div>
                             ))
                         }
