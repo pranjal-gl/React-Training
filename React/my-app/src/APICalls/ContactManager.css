@@ -1,0 +1,14 @@
+body {
+    background-color: #eaeaea;
+}
+
+.nav {
+    background-color: #2d2d5c;
+    height: 60px;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+}
