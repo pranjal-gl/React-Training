@@ -87,7 +87,7 @@ class ContactManagerComp extends React.Component {
                 {
                     this.state.updateFlag ? <h2>Update existing contact</h2> : <h2>Add new contact</h2>
                 }
-
+ 
                 <form>
                     <input text='text' placeholder="Username" onChange={(e)=>this.handleChange(e, 'name')} value={this.state.ipUser}></input>
                     <input text='text' placeholder="Phone" onChange={(e)=>this.handleChange(e, 'phone')} value={this.state.ipPhone}></input>

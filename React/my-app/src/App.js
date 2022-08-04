@@ -6,7 +6,10 @@
 // import EventDemo from './Day6/EventDemo'
 
 
-import ContactManager from './APICalls/ContactManager'
+// import ContactManager from './APICalls/ContactManager'
+
+import data from "./TaskManager/TaskManagerData";
+import TaskManager from "./TaskManager/TaskManager"
 
 function App(){
     return(
@@ -16,7 +19,8 @@ function App(){
            {/* <ContactManagerComp data={contactDetails}></ContactManagerComp> */}
            {/* <EventDemo data="John"></EventDemo> */}
 
-           <ContactManager></ContactManager>
+           {/* <ContactManager></ContactManager> */}
+           <TaskManager data={data}></TaskManager>
         </div>
     )
 }
