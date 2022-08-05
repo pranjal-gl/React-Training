@@ -4,12 +4,13 @@
 // import electronic from './WHOC/eData'
 // import clothing from './WHOC/cData'
 // import EventDemo from './Day6/EventDemo'
-
-
 // import ContactManager from './APICalls/ContactManager'
 
-import data from "./TaskManager/TaskManagerData";
-import TaskManager from "./TaskManager/TaskManager"
+// import data from "./TaskManager/TaskManagerData";
+// import TaskManager from "./TaskManager/TaskManager"
+
+
+import LeaderBoard from "./ScoreLeaderBoard/LeaderBoard";
 
 function App(){
     return(
@@ -20,8 +21,10 @@ function App(){
            {/* <EventDemo data="John"></EventDemo> */}
 
            {/* <ContactManager></ContactManager> */}
-           <TaskManager data={data}></TaskManager>
+           {/* <TaskManager data={data}></TaskManager> */}
+           <LeaderBoard></LeaderBoard>
         </div>
     )
 }
+
 export default App

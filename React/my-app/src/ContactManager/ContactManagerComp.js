@@ -89,7 +89,7 @@ class ContactManagerComp extends React.Component {
                 }
  
                 <form>
-                    <input text='text' placeholder="Username" onChange={(e)=>this.handleChange(e, 'name')} value={this.state.ipUser}></input>
+                    <input text='text' placeholder="Username" onChange={(e)=>this.handleChange(e, 'name')} value={this.state.ipUser} autoFocus></input>
                     <input text='text' placeholder="Phone" onChange={(e)=>this.handleChange(e, 'phone')} value={this.state.ipPhone}></input>
                     <input text='text' placeholder="Email" onChange={(e)=>this.handleChange(e, 'email')} value={this.state.ipEmail}></input>
                     <input text='text' placeholder="Address" onChange={(e)=>this.handleChange(e, 'address')} value={this.state.ipAddress}></input>

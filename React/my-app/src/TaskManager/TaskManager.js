@@ -41,8 +41,9 @@ class TaskManager extends React.Component{
     }
 
     clearForm = () => {
-        this.setState({tempTask: ''});
-        this.setState({tempDesc: ''});
+        console.log("clear form ");
+        // this.setState({tempTask: ''});
+        // this.setState({tempDesc: ''});
     }
 
     createTask = (e) => {
@@ -59,6 +60,8 @@ class TaskManager extends React.Component{
         console.log(newObj);
         this.setState({tasks: [...this.state.tasks, newObj]});
         this.clearForm();
+        this.setState({tempTask: ''});
+        this.setState({tempDesc: ''});
     }
 
     addTask = (e, key) => {
@@ -78,8 +81,8 @@ class TaskManager extends React.Component{
                 <div className="form-div">
                     <h4>Add new Task</h4>
                     <form>
-                        <input type='text' placeholder="Task" onChange={(e)=>this.addTask(e, 'task')}></input>
-                        <input type='text' placeholder="Description" onChange={(e)=>this.addTask(e, 'desc')}></input>
+                        <input type='text' placeholder="Task" onChange={(e)=>this.addTask(e, 'task')} value={this.state.tempTask}></input>
+                        <input type='text' placeholder="Description" onChange={(e)=>this.addTask(e, 'desc')} value={this.state.tempDesc}></input>
                         <input type='submit' onClick={(e)=> this.createTask(e)}></input>
                     </form>
                 </div>

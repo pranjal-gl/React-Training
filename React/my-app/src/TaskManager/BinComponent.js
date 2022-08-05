@@ -27,7 +27,7 @@ class BinComponent extends React.Component{
                         <div style={borderstyle} className="card-div">
                             <h3>{item.taskname}           <span>({item.taskdesc})</span></h3>
                             <div className="btn-div">
-                            <button className='btn' onClick={()=>changeDeletion(item.id)}>
+                            <button className='btn' onClick={()=>changeDeletion(item.id)} title='Restore'>
                                 <img src={restoreImg} alt="" width="30" height="30"></img>
                             </button>
                             </div>

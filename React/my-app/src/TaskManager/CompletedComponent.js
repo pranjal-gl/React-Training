@@ -28,10 +28,10 @@ class CompletedComponent extends React.Component{
                         <div style={borderstyle} className="card-div">
                             <h3>{item.taskname}           <span>({item.taskdesc})</span></h3>
                             <div className="btn-div">
-                            <button className='btn' onClick={()=>changeDeletion(item.id)}>
+                            <button className='btn' onClick={()=>changeDeletion(item.id)} title='Delete'>
                                 <img src={deleteImg} alt="" width="30" height="30"></img>
                             </button>
-                            <button  className='btn' onClick={()=>changeCompletion(item.id)} >
+                            <button  className='btn' onClick={()=>changeCompletion(item.id)} title='Mark as incomplete'>
                                 <img src={pending} alt="" width="30" height="30"></img>
                             </button>
                             </div>
