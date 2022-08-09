@@ -33,6 +33,7 @@ class TaskManager extends React.Component{
         obj.completion=!obj.completion
         this.setState({tasks:temp}) 
     }
+    
     changeDeletionStatus=(itemid)=>{
         const temp=[...this.state.tasks]
         const obj=temp.find((item)=>item.id===itemid)

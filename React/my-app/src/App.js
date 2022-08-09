@@ -12,6 +12,8 @@
 
 import LeaderBoard from "./ScoreLeaderBoard/LeaderBoard";
 
+// import Parent from './Assessment/Parent'
+
 function App(){
     return(
         <div>
@@ -23,6 +25,7 @@ function App(){
            {/* <ContactManager></ContactManager> */}
            {/* <TaskManager data={data}></TaskManager> */}
            <LeaderBoard></LeaderBoard>
+           {/* <Parent></Parent> */}
         </div>
     )
 }

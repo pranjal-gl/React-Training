@@ -1,4 +1,7 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import './Header.css'
+import './TableData.css'
 class TableData extends React.Component{
     constructor(props){
         super(props) 
@@ -6,14 +9,46 @@ class TableData extends React.Component{
     render(){
         console.log('render of table')
         return(
-        <div>
+        <div className="table-div">
         <table>
             <thead>
                 <tr>
-                    <th>Rank</th>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Score</th>
+                    <th>
+                        <button className="btn">
+                            <NavLink className='link' to='/' style={({isActive})=>(
+                                {color: isActive ? 'red' : 'blue'}
+                            )}>
+                                Rank
+                            </NavLink>
+                        </button>
+                    </th>
+                    <th>
+                        <button className="btn">
+                            <NavLink className='link' to='/name' style={({isActive})=>(
+                                {color: isActive ? 'red' : 'blue'}
+                            )}>
+                                Name
+                            </NavLink>
+                        </button>
+                    </th>
+                    <th>
+                        <button className="btn">
+                            <NavLink className='link' to='/age' style={({isActive})=>(
+                                {color: isActive ? 'red' : 'blue'}
+                            )}>
+                                Age
+                            </NavLink>
+                        </button>
+                    </th>
+                    <th>
+                        <button className="btn">
+                            <NavLink className='link' to='/score' style={({isActive})=>(
+                                {color: isActive ? 'red' : 'blue'}
+                            )}>
+                                Score
+                            </NavLink>
+                        </button>
+                    </th>
                 </tr>
             </thead>
             <tbody>
