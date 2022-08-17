@@ -26,7 +26,7 @@ const LogIn = () => {
 
     return(
         <div>
-            <h1>LogIn</h1>
+            <h1>Log In</h1>
             Username<input type='text' onChange={(e)=>handleChange(e,"username")}></input>
             Password<input type='text' onChange={(e)=>handleChange(e,"password")}></input>
             <button onClick={authLogin}>login</button>

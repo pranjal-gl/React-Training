@@ -3,8 +3,9 @@
 
 // import FormHook from "./CustomHooks/FormHook"
 // import Counter from "./CustomHooks/Counter"
-import AuthProvider from "./Task1/AuthProvider"
-import ContextProvider from "./Task2/ContextProvider"
+// import AuthProvider from "./Task1/AuthProvider"
+// import ContextProvider from "./Task2/ContextProvider"
+import GetUserConnector from './Redux Thunk/Component/GetUserConnector';
 
 function App() {
     return(
@@ -16,7 +17,8 @@ function App() {
         // <Counter></Counter>
 
         // <ContextProvider></ContextProvider>
-        <AuthProvider></AuthProvider>
+        // <AuthProvider></AuthProvider>
+        <GetUserConnector></GetUserConnector>
     )
 }
 export default App
