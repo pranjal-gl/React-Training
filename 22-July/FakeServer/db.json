@@ -3,7 +3,7 @@
     {
       "fname": "Amy",
       "email": "amy@gmail.com",
-      "phone": "9876543345",
+      "phone": "987654323",
       "id": 1,
       "address": ""
     },
@@ -83,13 +83,6 @@
       "address": "US"
     },
     {
-      "id": 1660115725527,
-      "fname": "jhfhfsj",
-      "phone": "kjsdhjdc",
-      "email": "kjsjhdcshk",
-      "address": "mnsns"
-    },
-    {
       "id": 1660115736930,
       "fname": "demo",
       "phone": "u748392",
@@ -101,6 +94,24 @@
       "fname": "Pennya",
       "phone": "1234567890",
       "email": "penny@gmail.com"
+    },
+    {
+      "id": 1660819998903,
+      "fname": "Pranjal",
+      "email": "pranjal@gmail.com",
+      "phone": "876543456"
+    },
+    {
+      "id": 1660820061410,
+      "fname": "Any",
+      "email": "any@mail.com",
+      "phone": "43456789"
+    },
+    {
+      "id": 1660840308130,
+      "fname": "Hola",
+      "email": "hola@gmail.com",
+      "phone": "9876543"
     }
   ]
 }
