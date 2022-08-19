@@ -1,0 +1,11 @@
+.light {
+    text-align: center;
+    height: 700px;
+    background-color: antiquewhite;
+}
+.dark {
+    text-align: center;
+    height: 700px;
+    background-color: rgb(39, 36, 36);
+    color: white;
+}

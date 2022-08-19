@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import {getUserData} from '../Actions/userAction';
+import {getUserData, postUserData} from '../Actions/userAction';
 import GetUserComponent from './GetUserComponent';
 
 const mapStateToProps = (state) => {
@@ -8,6 +8,5 @@ const mapStateToProps = (state) => {
         isLoading: state.loading
     }
 }
-// console.log({getUserData});
 
-export default connect(mapStateToProps, {getUserData})(GetUserComponent);
+export default connect(mapStateToProps, {getUserData, postUserData})(GetUserComponent);

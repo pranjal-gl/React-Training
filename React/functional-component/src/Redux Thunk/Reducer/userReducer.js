@@ -10,6 +10,11 @@ function userReducer(state=initialState, action) {
                 users: action.payload,
                 loading: false
             }
+        case 'POST_USER':
+            return {
+                users: action.payload,
+                loading: true
+            }
         default: 
             return state
     }

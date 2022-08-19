@@ -1,0 +1,8 @@
+.custom-nav {
+    height: 75px;
+    
+}
+.custom-nav a {
+    align-self: center;
+    color: aliceblue;
+}

@@ -3,6 +3,7 @@ import { useEffect } from "react";
 const GetUserComponent = (props) => {
     useEffect(()=>{
         props.getUserData()
+        props.postUserData()
     }, [])
     return(
         <div>
