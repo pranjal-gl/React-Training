@@ -62,56 +62,16 @@
       "email": "raj@gmail.com"
     },
     {
-      "id": 1660114523387,
-      "fname": "New data",
-      "phone": "885858585",
-      "email": "newdata@gmail.com",
-      "address": "IND"
+      "id": 1660893165548,
+      "fname": "Saurabh",
+      "email": "saurabh@gmail.com",
+      "phone": "9876543456"
     },
     {
-      "id": 1660114706879,
-      "fname": "another",
-      "phone": "09876543",
-      "email": "another@gmail.com",
-      "address": "US"
-    },
-    {
-      "id": 1660114819368,
-      "fname": "RandomData",
-      "phone": "09876543456",
-      "email": "randomData@gmail.com",
-      "address": "US"
-    },
-    {
-      "id": 1660115736930,
-      "fname": "demo",
-      "phone": "u748392",
-      "email": "ndnd",
-      "address": "ndnd"
-    },
-    {
-      "id": 1660121074799,
-      "fname": "Pennya",
-      "phone": "1234567890",
-      "email": "penny@gmail.com"
-    },
-    {
-      "id": 1660819998903,
-      "fname": "Pranjal",
-      "email": "pranjal@gmail.com",
-      "phone": "876543456"
-    },
-    {
-      "id": 1660820061410,
-      "fname": "Any",
-      "email": "any@mail.com",
-      "phone": "43456789"
-    },
-    {
-      "id": 1660878926879,
-      "fname": "Hola",
-      "email": "hola@gmail.com",
-      "phone": "8765456789"
+      "id": 1660895144656,
+      "fname": "Sandeep",
+      "email": "sandeep@gmail.com",
+      "phone": "87654345678"
     }
   ]
 }

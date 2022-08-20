@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux"
 import { useSelector } from 'react-redux'
-import { removeUser, deleteUser } from "./useSlice";
+import { useEffect } from "react";
+import { removeUser, deleteUser, fetchUser } from "./useSlice";
 import './ViewUser.css'
 const ViewUser = () => {
 
@@ -10,6 +11,10 @@ const ViewUser = () => {
         dispatch(removeUser({id: id}));
         dispatch(deleteUser(id));
     }
+
+    useEffect(()=>{
+        dispatch(fetchUser());
+    }, [dispatch]) 
 
     return(
         <div className='container'>

@@ -51,9 +51,6 @@ const userSlice = createSlice({
         value: initialValOfState
     }, 
     reducers: {
-        addUser: (state, action) => {
-            state.value.usersData.push(action.payload)
-        },
         removeUser: (state, action) => {
             console.log(action.payload.id);
             state.value.usersData = state.value.usersData.filter((item)=>item.id !== action.payload.id);
@@ -67,18 +64,12 @@ const userSlice = createSlice({
         }
     },
     extraReducers: {
-        [fetchUser.pending]: (state, action) => {
-            state.value.loading = true;
-        },
-        [fetchUser.rejected]: (state, action) => {
-            state.value.loading = false;
-        },
         [fetchUser.fulfilled]: (state, action) => {
             state.value.loading = false;
-            state.value.usersData = [...state.value.usersData, ...action.payload];
+            state.value.usersData = [...action.payload];
         }
     }
 })
 
-export const {addUser, removeUser, updateUser} = userSlice.actions;
+export const {removeUser, updateUser} = userSlice.actions;
 export default userSlice.reducer;

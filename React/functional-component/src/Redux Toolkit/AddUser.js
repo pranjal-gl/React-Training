@@ -1,4 +1,4 @@
-import {addUser, createUser} from './useSlice'
+import { createUser } from './useSlice'
 import { useDispatch } from "react-redux"
 import { useState } from 'react';
 import './AddUser.css';
@@ -16,18 +16,13 @@ const AddUser = () => {
 
     const dispatch = useDispatch();
     const handleAdd = () => {
-        dispatch(addUser({
+        const data = {
             id: Date.now(),
             fname: uname,
             email: email,
             phone: phone
-        }))
-        dispatch(createUser({
-            id: Date.now(),
-            fname: uname,
-            email: email,
-            phone: phone
-        }))
+        }
+        dispatch(createUser(data))
     }
 
     return(

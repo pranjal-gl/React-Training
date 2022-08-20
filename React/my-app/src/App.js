@@ -24,8 +24,9 @@ function App(){
 
            {/* <ContactManager></ContactManager> */}
            {/* <TaskManager data={data}></TaskManager> */}
-           <LeaderBoard></LeaderBoard>
+           {/* <LeaderBoard></LeaderBoard> */}
            {/* <Parent></Parent> */}
+           
         </div>
     )
 }
