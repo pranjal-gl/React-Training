@@ -4,10 +4,10 @@ import App from './App';
 import { Provider } from 'react-redux';
 
 // for reduxjs toolkit
-// import store from './Redux Toolkit/store'
+import store from './Redux Toolkit/store'
 
 // for store application
-import store from './StoreApp/store'
+// import store from './StoreApp/store'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

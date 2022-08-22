@@ -30,7 +30,7 @@ export const deleteUser = createAsyncThunk('/Redux Toolkit/createUser/', async (
     }
 })
 
-export const modifyUser = createAsyncThunk('/Redux Toolkit/createUser/', async (val) => {
+export const modifyUser = createAsyncThunk('/Redux Toolkit/modifyUser/', async (val) => {
     try {
         const res = await axios.patch(`http://localhost:3001/empDetails/${val.id}`, val);
         return res.data;
