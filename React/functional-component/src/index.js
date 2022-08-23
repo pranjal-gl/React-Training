@@ -4,10 +4,13 @@ import App from './App';
 import { Provider } from 'react-redux';
 
 // for reduxjs toolkit
-import store from './Redux Toolkit/store'
+// import store from './Redux Toolkit/store'
 
 // for store application
 // import store from './StoreApp/store'
+
+// for express react app
+import store from './ReactExpressApp/store'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,5 +23,8 @@ root.render(
   // <App></App>
 
   // Ref demo
+  // <App></App>
+
+  //Joi Browser
   // <App></App>
 );
