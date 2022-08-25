@@ -9,10 +9,12 @@ import UpdateUser from './Redux Toolkit/UpdateUser'
 // import './App.css';
 import JoiComponent from './JoiBrowserDemo/JoiComponent';
 import LandingPage from './ReactExpressApp/LandingPage';
+import LoginToken from './JWT Token/LoginToken';
+import DashBoardToken from './JWT Token/DashboardToken'
 
 function App() {
-    return(
-        
+    return (
+
         // Reduxjs toolkit
         /**
             <div>
@@ -32,14 +34,23 @@ function App() {
             </div>
         */
 
-            //Ref Demo
-            // <ParentComp></ParentComp>
+        //Ref Demo
+        // <ParentComp></ParentComp>
 
-            <LandingPage></LandingPage>
+        // <LandingPage></LandingPage>
 
-            //Joi Browser
-            // <JoiComponent></JoiComponent>
+        //Joi Browser
+        // <JoiComponent></JoiComponent>
 
-        )
-    }
+        <div>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<LoginToken></LoginToken>}></Route>
+                    <Route path='/dashboard' element={<DashBoardToken></DashBoardToken>}></Route>
+                </Routes>
+            </BrowserRouter>
+        </div>
+
+    )
+}
 export default App

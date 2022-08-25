@@ -15,15 +15,15 @@ import store from './ReactExpressApp/store'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // For Core-Redux
-  <Provider store={store}>
-    <App></App>
-  </Provider>
+  // <Provider store={store}>
+  //   <App></App>
+  // </Provider>
 
   // Context API
   // <App></App>
 
   // Ref demo
-  // <App></App>
+  <App></App>
 
   //Joi Browser
   // <App></App>
